@@ -1,30 +1,69 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# React TypeScript Calculator
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a simple calculator application built using React and TypeScript. It provides a user-friendly interface for performing basic arithmetic calculations.
 
-## Expanding the ESLint configuration
+![Calculator Dark Theme](https://i.imgur.com/6gy600s.png)
+![Calculator Light Theme](https://i.imgur.com/AnJtDdS.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Live Preview
 
-- Configure the top-level `parserOptions` property like this:
+Check out the live preview of the calculator: [React TypeScript Calculator](https://calculator-react-tau-orpin.vercel.app/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+
+
+## Features
+
+- Support for basic arithmetic operations: addition, subtraction, multiplication, and division
+- Percentage calculation
+- Dark and light theme toggle
+- Clear button to reset the calculator
+- CSS modules for styling
+
+## Technologies Used
+
+- React: A JavaScript library for building user interfaces
+- TypeScript: A typed superset of JavaScript that compiles to plain JavaScript
+- CSS Modules: A CSS file in which all class names and animation names are scoped locally by default
+- Context API: Used for managing the theme state globally
+
+## Project Structure
+
+The project structure is as follows:
+
+```
+src/
+  ├── assets/
+  │   ├── ac.svg
+  │   ├── moon.svg
+  │   └── sun.svg
+  ├── components/
+  │   ├── Button/
+  │   │   ├── Button.module.css
+  │   │   └── Button.tsx
+  │   └── Text/
+  │       ├── Text.module.css
+  │       └── Text.tsx
+  ├── context/
+  │   └── ThemeContext.tsx
+  ├── hooks/
+  │   └── useCalculator.ts
+  ├── layout/
+  │   ├── Body/
+  │   │   ├── Body.module.css
+  │   │   └── Body.tsx
+  │   ├── BottomPanel/
+  │   │   ├── BottomPanel.module.css
+  │   │   └── BottomPanel.tsx
+  │   └── TopPanel/
+  │       ├── TopPanel.module.css
+  │       └── TopPanel.tsx
+  ├── utils/
+  │   ├── calculatorLogic.ts
+  │   └── operations.ts
+  ├── App.css
+  ├── App.tsx
+  └── index.tsx
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
