@@ -1,0 +1,13 @@
+.bottom-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding-inline: 43px;
+  padding-top: 48px;
+  padding-bottom: 66px;
+  gap: 1em;
+
+  background-color: var(--clr-bg-secondary);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}

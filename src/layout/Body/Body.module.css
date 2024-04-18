@@ -1,0 +1,22 @@
+.body {
+  max-width: 390px;
+  background-color: var(--clr-bg);
+}
+
+.dark {
+  --clr-bg: var(--clr-bg-dark);
+  --clr-bg-secondary: var(--clr-bg-dark-light);
+  --clr-bg-accent: var(--clr-bg-dark-accent);
+  --clr-font: var(--clr-font-dark);
+  --clr-font-secondary: var(--clr-font-dark-second);
+  --clr-hover: var(--clr-hover-dark);
+}
+
+.light {
+  --clr-bg: var(--clr-bg-light);
+  --clr-bg-secondary: var(--clr-bg-light-dark);
+  --clr-bg-accent: var(--clr-bg-light-accent);
+  --clr-font: var(--clr-font-light);
+  --clr-font-secondary: var(--clr-font-light-second);
+  --clr-hover: var(--clr-hover-light);
+}

@@ -1,0 +1,33 @@
+:root {
+  /* Dark Theme */
+  --clr-bg-dark: rgb(30, 30, 30);
+  --clr-bg-dark-light: rgb(39, 41, 46);
+  --clr-bg-dark-accent: rgb(50, 52, 56);
+  --clr-font-dark: rgb(255, 255, 255);
+  --clr-font-dark-second: rgb(204, 205, 215);
+  --clr-hover-dark: rgba(255, 255, 255, 0.1);
+  /* Light Theme */
+  --clr-bg-light: rgb(255, 255, 255);
+  --clr-bg-light-dark: rgb(245, 245, 245);
+  --clr-bg-light-accent: rgb(233, 233, 233);
+  --clr-font-light: rgb(30, 30, 30);
+  --clr-font-light-second: rgb(99, 115, 129);
+  --clr-hover-light: rgba(0, 0, 0, 0.1);
+
+  /* Other */
+  --clr-bg-gradient-hot: linear-gradient(
+    180deg,
+    rgb(237, 14, 152),
+    rgb(254, 90, 45) 100%
+  );
+
+  --font: system-ui, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(17, 17, 17);
+  font-family: var(--font);
+}

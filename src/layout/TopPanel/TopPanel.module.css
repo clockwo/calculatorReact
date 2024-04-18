@@ -1,0 +1,9 @@
+.top-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+  padding-top: 4rem;
+  padding-inline: 2.6875rem;
+}
